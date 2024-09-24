@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"     rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/7ad7c848c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="sticky top-0 z-50 bg-gray-100/50">
+    <header class="flex justify-between items-center p-10 h-28">
+        <button id="btn-blog" class="btn bg-green-400 ">Blog</button>
+        <div class="text-2xl font-bold flex items-center space-x-2">
+            <img src="./assets/logo.png" alt="Logo" class="w-10 h-10">
+            <span class="lg:text-2xl md:text-xl">Donate Bangladesh</span>
+        </div>
+
+        <div class="text-xl font-bold flex items-center space-x-2">
+            <img src="./assets/coin.png" alt="Coin Icon" class="w-6 h-6">
+            <span id="account-balance">5500 BDT</span>
+        </div>
+    </header>
+
+    <!-- buttons -->
+    <div class="flex justify-center space-x-4 p-4 bg-white">
+        <button id="btn-donation" class="btn bg-green-400">Donation</button>
+        <button id="btn-history" class="btn border">History</button>
+    </div>
+</div>
+    <h1 class="text-5xl font-bold m-5">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is Document Object model (DOM) ?</div>
+        <div class="collapse-content">
+          <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects that can be manipulated using JavaScript or other programming languages. The DOM allows developers to interact with the content, structure, and styles of a web page dynamically.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you select element from DOM ?</div>
+        <div class="collapse-content">
+          <p>To select elements from the DOM, you can use several methods in JavaScript. The getElementById() method allows you to select an element by its unique id. For selecting multiple elements with the same class, you can use getElementsByClassName(), which returns a collection of matching elements. If you want to select elements based on their tag name, like all <div> or <p> elements, you can use getElementsByTagName(). For more flexible selection using CSS-like selectors, querySelector() allows you to select the first matching element, while querySelectorAll() selects all matching elements. These methods provide a variety of ways to target elements on your page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is event delegation in DOM and why it is useful ?        </div>
+        <div class="collapse-content">
+          <p>Event delegation is a technique in JavaScript that allows you to manage events efficiently by attaching a single event listener to a parent element instead of multiple listeners to individual child elements. This is particularly useful when you have a large number of similar elements that need to respond to the same event.
+            How Event Delegation Works:
+            When an event occurs on a child element, the event bubbles up through the DOM tree to its parent elements. By attaching a single event listener to the parent, you can handle events for all child elements in one place.</p>
+        </div>
+      </div>
+</body>
+</html>
